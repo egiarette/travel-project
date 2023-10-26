@@ -54,8 +54,57 @@ h6 {
   font-size: 36px;
   text-align: center;
 }
+
+footer {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/img/moulin-rouge-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.7;
+  margin-right: 25px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /* Responsive Stuff */
-@media (max-width: 800px) {
+@media (max-width: 960px) {
   .hero {
     padding: 100px 0;
   }
