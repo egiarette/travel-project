@@ -106,8 +106,17 @@ footer a {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 5/4;
+}
+
 .card {
   background-color: white;
+}
+
+.card-header.grid {
+  grid-gap: 0;
 }
 
 .card-body {
@@ -215,15 +224,22 @@ main p {
   main h3 {
     font-size: 30px;
   }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
+  }
 }
 
 @media (max-width: 600px) {
   .hero h1 {
     font-size: 48px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
   }
 
   main h3 {
